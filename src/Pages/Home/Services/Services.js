@@ -16,11 +16,14 @@ const Services = () => {
     <div id="services" className="container">
       <div className="row">
         <h1>My Services</h1>
-        <div className="services-container">
+        {services.map((service) => (
+          <Service key={service.id} service={service}></Service>
+        ))}
+        {/* <div className="services-container">
           {services.map((service) => (
             <Service key={service.id} service={service}></Service>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
