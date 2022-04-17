@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Oral medicine",
+    "price": "1200",
+    "description": "This type of dentist specializes in examining patients as well as diagnosing and treating diseases that occur in gum tissue. Periodontists may treat patients by performing scaling, root canals, planing and debridement. Some may also specialize in placing implants.",
+    "img": "https://i.ibb.co/51KSTrX/bogdan-condr-q1-KLbsw-F70-Y-unsplash.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Orthodontics and dentofacial orthopedics",
+    "price": "1000",
+    "description": "Prosthodontists are responsible for improving patients' mouth, jaw and teeth function as well as teeth and mouth appearance. They typically make molds of patients' mouths, create prosthetics like bridges with replacement teeth, place prosthetics.",
+    "img": "https://i.ibb.co/mbwLw3R/caroline-lm-Ji-Bssi-ZVPZA-unsplash.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Dental anesthesiology",
+    "price": "5000",
+    "description": "An endodontist specializes in diseases and conditions in the tooth, such as decay. They may provide treatments like performing root canals or surgeries to repair traumatic dental injuries and decay, as well as placing implants for patients.",
+    "img": "https://i.ibb.co/CQR8bNw/elena-mozhvilo-Yzyvxfzddz-A-unsplash.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Public health dentistry",
+    "price": "3500",
+    "description": "A pediatric dentist specializes in examining, treating and educating young patients. They review X-rays, take molds of teeth, recommend treatments like braces or retainers and educate children and families on best oral hygiene practices.",
+    "img": "https://i.ibb.co/LJD2D2Q/geo-days-u2i16-I-jc-unsplash.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Pediatric dentistry",
+    "price": "800",
+    "description": "A dentist examines patients’ teeth for cavities, misalignment and signs of other conditions. They may review X-rays and medical history to create a tailored treatment plan, including referring patients to an orthodontist for braces or an oral surgeon to remove teeth.",
+    "img": "https://i.ibb.co/2d20VyF/quang-tri-nguyen-Vckd-Jzo7ig0-unsplash.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Oral and maxillofacial pathology",
+    "price": "1500",
+    "description": "These dental surgeons are responsible for invasive procedures like removing wisdom teeth and preparing patients' mouths for extensive or complex implants.",
+    "img": "https://i.ibb.co/KV4ZK6G/rudi-fargo-Fx7-Q750-Eph-A-unsplash.jpg"
+  }
+]
