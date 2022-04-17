@@ -1,4 +1,5 @@
 import React from "react";
+import Banner from "../Banner/Banner";
 // import PageTitle from '../../Shared/PageTitle/PageTitle';
 // import Banner from '../Banner/Banner';
 // import Experts from '../Experts/Experts';
@@ -8,7 +9,8 @@ const Home = () => {
   return (
     <div>
       {/* <PageTitle title="Home"></PageTitle> */}
-      {/* <Banner></Banner> */}
+      <Banner></Banner>
+      <br />
       <Services></Services>
       {/* <Experts></Experts> */}
     </div>
