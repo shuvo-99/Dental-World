@@ -2,7 +2,7 @@ import React from "react";
 
 const Blogs = () => {
   return (
-    <div>
+    <div className="container mt-5">
       <h2>Q1. Difference between authorization and authentication</h2>
       <p>
         Ans:
@@ -19,8 +19,8 @@ const Blogs = () => {
         validates user's permission
       </p>
       <h2>
-        Why are you using firebase? What other options do you have to implement
-        authentication?
+        Q2. Why are you using firebase? What other options do you have to
+        implement authentication?
       </h2>
       <br />
       <p>
@@ -32,11 +32,11 @@ const Blogs = () => {
         JSON Web Token etc.
       </p>
       <h2>
-        What other services does firebase provide other than authentication
+        Q3. What other services does firebase provide other than authentication
       </h2>
       <br />
       <p>
-        Besides authentication, firebase provides Cloud Firestore, Cloud
+        Ans: Besides authentication, firebase provides Cloud Firestore, Cloud
         Functions, Authentication, Hosting, Cloud Storage, Google Analytics,
         Predictions, Cloud Messaging, Dynamic Links, Remote Config and others
       </p>
