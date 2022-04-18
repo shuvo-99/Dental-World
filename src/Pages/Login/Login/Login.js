@@ -76,16 +76,7 @@ const Login = () => {
           Login
         </Button>
       </Form>
-      {/* <p>
-        New to Genius Car?{" "}
-        <Link
-          to="/register"
-          className="text-primary pe-auto text-decoration-none"
-          onClick={navigateRegister}
-        >
-          Please Register
-        </Link>{" "}
-      </p> */}
+
       <br />
       <p className="text-center">
         Don't have an account?

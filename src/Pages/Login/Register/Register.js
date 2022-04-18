@@ -31,6 +31,7 @@ const Register = () => {
     const name = event.target.name.value;
     const email = event.target.email.value;
     const password = event.target.password.value;
+    console.log(email, password);
     //   // const agree = event.target.terms.checked;
 
     //   await createUserWithEmailAndPassword(email, password);
