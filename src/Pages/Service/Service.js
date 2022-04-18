@@ -1,15 +1,15 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import "./Service.css";
 
 const Service = ({ service }) => {
   const { id, name, img, description, price } = service;
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
-  // const navigateToServiceDetail = id =>{
-  //     navigate(`/service/${id}`);
-  // }
+  const navigateToServiceDetail = (id) => {
+    navigate(`/service/${id}`);
+  };
   return (
     // <div className="service">
     //   <img className="w-100" src={img} alt="" />
@@ -28,7 +28,11 @@ const Service = ({ service }) => {
           <h2 className="card-title">{name}</h2>
           <p>Price: {price}</p>
           <p className="card-text">{description}</p>
-          <a href="#" className="btn btn-warning">
+          <a
+            href="#"
+            onClick={() => navigateToServiceDetail(id)}
+            className="btn btn-warning"
+          >
             Make Appointment: {name}
           </a>
         </div>
