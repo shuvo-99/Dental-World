@@ -3,6 +3,7 @@ import { Button, Form } from "react-bootstrap";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
+import SocialLogin from "../Social links/SocialLogin";
 
 const Login = () => {
   const emailRef = useRef("");
@@ -11,7 +12,7 @@ const Login = () => {
   const location = useLocation();
 
   let from = location.state?.from?.pathname || "/";
-  // let errorElement;
+  let errorElement;
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
 
@@ -25,9 +26,13 @@ const Login = () => {
     navigate(from, { replace: true });
   }
 
-  // if (error) {
-  //   errorElement = <p className="text-danger">Error: {error?.message}</p>;
-  // }
+  if (error) {
+    errorElement = (
+      <p className="text-danger text-center mt-4 mb-1">
+        Error: {error?.message}
+      </p>
+    );
+  }
 
   const navigateRegister = (event) => {
     navigate("/register");
@@ -77,6 +82,7 @@ const Login = () => {
         </Button>
       </Form>
 
+      {errorElement}
       <br />
       <p className="text-center">
         Don't have an account?
@@ -88,6 +94,8 @@ const Login = () => {
           Create here
         </Link>
       </p>
+
+      <SocialLogin></SocialLogin>
     </div>
   );
 };

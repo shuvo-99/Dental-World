@@ -27,7 +27,7 @@ const Service = ({ service }) => {
         <img src={img} className="card-img-top" alt="..." />
         <div className="card-body">
           <h2 className="card-title">{name}</h2>
-          <p>Price: {price}</p>
+          <p>Price: Tk {price}</p>
           <p className="card-text">{description}</p>
           <a
             href="#"

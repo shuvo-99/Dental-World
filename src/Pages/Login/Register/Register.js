@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import "./Register.css";
 import auth from "../../../firebase.init";
+import SocialLogin from "../Social links/SocialLogin";
 // import SocialLogin from "../SocialLogin/SocialLogin";
 // import Loading from "../../Shared/Loading/Loading";
 
@@ -31,7 +32,7 @@ const Register = () => {
     const name = event.target.name.value;
     const email = event.target.email.value;
     const password = event.target.password.value;
-    console.log(email, password);
+    // console.log(email, password);
     //   // const agree = event.target.terms.checked;
 
     //   await createUserWithEmailAndPassword(email, password);
@@ -89,7 +90,7 @@ const Register = () => {
           Please Login
         </Link>{" "}
       </p>
-      {/* <SocialLogin></SocialLogin> */}
+      <SocialLogin></SocialLogin>
     </div>
   );
 };
