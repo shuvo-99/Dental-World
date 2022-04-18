@@ -1,18 +1,15 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-// import {
-//   useCreateUserWithEmailAndPassword,
-//   useUpdateProfile,
-// } from "react-firebase-hooks/auth";
+import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import "./Register.css";
-// import auth from '../../../firebase.init';
-// import SocialLogin from '../SocialLogin/SocialLogin';
-// import Loading from '../../Shared/Loading/Loading';
+import auth from "../../../firebase.init";
+// import SocialLogin from "../SocialLogin/SocialLogin";
+// import Loading from "../../Shared/Loading/Loading";
 
 const Register = () => {
   // const [agree, setAgree] = useState(false);
-  // const [createUserWithEmailAndPassword, user, loading, error] =
-  //   useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+  const [createUserWithEmailAndPassword, user, loading, error] =
+    useCreateUserWithEmailAndPassword(auth);
   // const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
   const navigate = useNavigate();
@@ -37,9 +34,10 @@ const Register = () => {
     //   // const agree = event.target.terms.checked;
 
     //   await createUserWithEmailAndPassword(email, password);
+    createUserWithEmailAndPassword(email, password);
     //   await updateProfile({ displayName: name });
     //   console.log("Updated profile");
-    //   navigate("/home");
+    navigate("/home");
   };
 
   return (
