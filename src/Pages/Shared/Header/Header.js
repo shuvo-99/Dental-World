@@ -25,11 +25,11 @@ const Header = () => {
           <Nav className="me-auto justify-content-center align-items-center">
             <Nav.Link href="home">Home</Nav.Link>
             <Nav.Link href="home#services"> My Services</Nav.Link>
-          </Nav>
-          <Nav>
             <Nav.Link as={Link} to="about">
               About Me
             </Nav.Link>
+          </Nav>
+          <Nav>
             {/* {user ? (
               <button
                 className="btn btn-link text-white text-decoration-none"
@@ -42,6 +42,9 @@ const Header = () => {
                 Login
               </Nav.Link>
             )} */}
+            <Nav.Link as={Link} to="login">
+              Login
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
