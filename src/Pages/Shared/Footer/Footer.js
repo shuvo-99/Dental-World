@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="text-center mt-5">
       <p>
-        <small>copyright @ {year} </small>
+        <small>copyright @ Dental World || All Rights Reserved {year} </small>
       </p>
     </footer>
   );
