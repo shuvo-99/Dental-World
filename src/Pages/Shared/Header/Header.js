@@ -27,6 +27,9 @@ const Header = () => {
           <Nav className="me-auto justify-content-center align-items-center">
             <Nav.Link href="home">Home</Nav.Link>
             <Nav.Link href="home#services"> My Services</Nav.Link>
+            <Nav.Link as={Link} to="blogs">
+              Blogs
+            </Nav.Link>
             <Nav.Link as={Link} to="about">
               About Me
             </Nav.Link>
